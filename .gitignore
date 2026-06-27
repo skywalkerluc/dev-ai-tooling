@@ -1,0 +1,43 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+settings.json
+secrets.*
+*.pem
+*.key
+*.p12
+*.crt
+*.token
+
+# Logs and backups
+*.log
+*.backup
+*.backup-*
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Dependencies and build artifacts
+node_modules/
+.terraform/
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+target/
+dist/
+build/
+out/
+tmp/
+.cache/
+
+# Local overrides (never commit real configs)
+**/settings.local.json
+**/settings.json
+!**/settings.template.json

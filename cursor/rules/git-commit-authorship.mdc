@@ -1,0 +1,14 @@
+---
+description: Git commit authorship — no AI co-authors
+globs:
+alwaysApply: true
+---
+
+# Git commit authorship
+
+When creating git commits:
+
+- Never add `Co-authored-by` trailers for Cursor, AI agents, or automated assistants.
+- The commit author must be only the human developer.
+- Do not commit unless explicitly requested.
+- Do not push without explicit confirmation.

@@ -1,0 +1,37 @@
+# Global Claude instructions
+
+These rules apply to all projects unless overridden by project-local configuration.
+
+## Investigation and edits
+
+- Prefer investigating before editing on medium or large tasks.
+- Keep diffs small and focused.
+- Follow existing patterns in the codebase.
+- Prefer LSP or code intelligence when available.
+
+## Git and collaboration
+
+- Do not create commits unless explicitly requested.
+- Do not push without explicit confirmation.
+- Never add AI co-author trailers (e.g. `Co-authored-by: Cursor <cursoragent@cursor.com>`).
+
+## Migrations and schema changes
+
+- Before creating or modifying migrations, inspect existing migrations in the project.
+- Treat destructive schema changes (drop column, drop table, truncate) with extra caution.
+
+## Validation and tooling
+
+- Detect package manager, build tool, and validation commands from the project — do not assume defaults.
+- Do not use npm, yarn, pnpm, or bun globally by default.
+- Do not introduce a new package manager without explicit request.
+- Run the smallest relevant validation possible before finishing.
+- Prefer tools and scripts already present in the repository.
+
+## Completion report
+
+Before finishing, report:
+
+- Files changed
+- Tests or validation commands run
+- Remaining risks or follow-ups

@@ -1,0 +1,10 @@
+{
+  "_comment": "Copy to ~/.cursor/settings.json and customize locally. Do not commit settings.json.",
+  "permissions": {
+    "allow": [],
+    "deny": []
+  },
+  "env": {
+    "EXAMPLE_PLACEHOLDER": "replace-with-project-specific-values"
+  }
+}
